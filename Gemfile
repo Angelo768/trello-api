@@ -27,12 +27,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise_token_auth', '~> 1.1.3'
 
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # RSpec for Rails-3+ http://relishapp.com/rspec/rspec-rails
+  gem 'rspec-rails', '~> 3.9.0'
+  # Factory Bot ♥ Rails https://thoughtbot.com/services/ruby-…
+  gem 'factory_bot_rails', '~> 5.1.1'
 end
 
 group :development do
