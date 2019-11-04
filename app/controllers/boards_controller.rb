@@ -11,7 +11,10 @@ class BoardsController < ApplicationController
 
   # GET /boards/1
   def show
-    render json: @board, include: {lists: {only: [:id, :name], include: {tasks: {only: [:id, :name, :description]}}}}
+    render json: @board, include: {
+      lists: {only: [:id, :name], include: {
+        tasks: {only: [:id, :name, :description]}}
+        }}
   end
 
   # POST /boardsboard_id: self.id, name: "TO DO"

@@ -1,4 +1,5 @@
 class ListsController < ApplicationController
+  include ListsHelper
   before_action :authenticate_user!
   before_action :set_list, only: [:show, :update, :destroy]
 
@@ -36,7 +37,7 @@ class ListsController < ApplicationController
 
   # DELETE /lists/1
   def destroy
-    @list.destroy
+    remove_list
   end
 
   private

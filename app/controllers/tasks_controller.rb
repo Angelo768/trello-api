@@ -6,7 +6,7 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.all
 
-    render json: @tasks
+    render json: @tasks, except: [:created_at, :updated_at]
   end
 
   # GET /tasks/1
@@ -37,6 +37,8 @@ class TasksController < ApplicationController
   # DELETE /tasks/1
   def destroy
     @task.destroy
+
+    render :json => {message: "Task remove success!"}
   end
 
   private
