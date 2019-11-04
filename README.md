@@ -17,11 +17,13 @@ Things you may want to cover:
 
 * How to run the test suite
 
-# rails db:setup
+* rails db:setup
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
 * Link to documentation: https://documenter.getpostman.com/view/6224077/SW14UGku
+
+* Link to api on heroku: 
 * ...
