@@ -15,15 +15,16 @@ Things you may want to cover:
 
 * Database initialization
 
-* How to run the test suite
+* How to run the application
+- rails db:create db:migrate db:seed or db:setup
 
-* rails db:setup
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+Arquiteture:
+- Boards
+- Lists
+- Tasks
 
 * Link to documentation: https://documenter.getpostman.com/view/6224077/SW14UGku
 
-* Link to api on heroku: 
-* ...
+* Link to api on heroku: https://trello-rails1.herokuapp.com/boards
+- Email: teste@teste.com
+- Senha: teste1234
