@@ -12,6 +12,7 @@ Things you may want to cover:
 * Restful API 
 
 # Configurations:
+- User ~> has many boards
 - Boards ~> has_many lists
 - Lists ~> has_many tasks
 - Tasks
@@ -22,6 +23,6 @@ Things you may want to cover:
 
 Documentation on Postman: https://documenter.getpostman.com/view/6224077/SW14UGku
 
-Link to api on heroku: https://trello-rails1.herokuapp.com/boards
+Link to api on heroku: https://my-real-trello.herokuapp.com//boards
 - Email: teste@teste.com
 - Senha: teste1234
