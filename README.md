@@ -11,6 +11,9 @@ Things you may want to cover:
 * Database Postgre SQL
 * Restful API 
 
+# Explanation for this project
+This project is a api inspired on trello application and the focus here is to be my first project well documented and available to test and learn more about Restful Api building with framework Ruby on Rails
+
 # Configurations:
 - User ~> has many boards
 - Boards ~> has_many lists
