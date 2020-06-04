@@ -30,7 +30,7 @@ gem 'devise_token_auth', '~> 1.1.3'
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
