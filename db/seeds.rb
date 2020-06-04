@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-User.create!(email: "teste@teste.com", password: "teste1234")
+unless User.find_by_email("teste@teste.com")
+    User.create!(email: "teste@teste.com", password: "teste1234")
+end
 
 5.times do |board|
     Board.create!(

@@ -4,9 +4,9 @@ class BoardsController < ApplicationController
 
   # GET /boards
   def index
-    @boards = Board.all
+    @boards = Board.where(user_id: current_user.id)
 
-    render json: @boards, except: [:user_id, :created_at, :updated_at], include: {user: {only: [:name, :email]}}
+    render json: @boards, except: [:user_id, :created_at, :updated_at]
   end
 
   # GET /boards/1
@@ -20,7 +20,8 @@ class BoardsController < ApplicationController
   # POST /boardsboard_id: self.id, name: "TO DO"
   def create
     @board = Board.new(board_params)
-
+    @board.user_id = current_user.id
+    
     if @board.save
       render json: @board, status: :created, location: @board
     else
@@ -50,6 +51,6 @@ class BoardsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def board_params
-      params.permit(:user_id, :name)
+      params.permit(:name)
     end
 end
